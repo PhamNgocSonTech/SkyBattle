@@ -16,11 +16,10 @@ public class ProjectileController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        moveProjectile();
+        Projectile();
     }
 
-
-    private void moveProjectile()
+    private void Projectile()
     {
         transform.Translate(direction * Time.deltaTime * moveSpeed);
     }
